@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="main.js" defer></script>
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <h1>BMI Calculator</h1>
+        <div class="bmi-container">
+            <form id="bmiForm">
+                <div class="form-control">
+                    <label for="heightFt">
+                        Height in feet and inches
+                    </label>
+                    <div class="inputs">
+                        <input
+                            type="number"
+                            name="height"
+                            id="heightFt"
+                            placeholder="Feet..."
+                            required
+                        />
+                        <input
+                            type="number"
+                            name="height"
+                            id="heightIn"
+                            placeholder="Inches..."
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="form-control">
+                    <label for="weight">
+                        Weight in pounds
+                    </label>
+                    <input
+                        type="number"
+                        name="weight"
+                        id="weight"
+                        step="00.01"
+                        placeholder="weight..."
+                    />
+                </div>
+
+                <button type="submit">Calculate</button>
+            </form>
+
+            <div id="bmiResult">
+                <p>BMI = <span id="bmi"> </span></p>
+            </div>
+
+            <div id="bmiDetails">
+                <h2>What your BMI means</h2>
+
+                <div id="details">
+                    <p>Underweight = Less than 18.5</p>
+                    <p>Normal weight = 18.5 - 24.9</p>
+                    <p>Overweight = 25 - 29.9</p>
+                    <p>Obesity = BMI of 30 or greater</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
